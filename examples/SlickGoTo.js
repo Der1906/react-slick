@@ -8,7 +8,7 @@ export default class SlickGoTo extends Component {
     this.changeHandler = this.changeHandler.bind(this)
   }
   changeHandler(e) {
-    this.refs.slider.slickGoTo(e.target.value)
+    this.refs.slider.slickGoTo(Number(e.target.value))
   }
   render() {
     const settings = {
